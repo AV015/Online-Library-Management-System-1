@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Borrowers</title>
+</head>
+<body>
+	<nav>
+	  <div>
+	    <div>
+	      <a href="index.html">Library Management System</a>
+	    </div>
+	    <ul>
+	      <li><a href="booksearch.html">Book Search</a></li>
+	      <li><a href="checkinbook.html">Check-In</a></li>
+	      <li><a href="payfine.html">Pay Fine</a></li>
+	      <li><a href="addborrower.html">Add Borrowers</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<section align="center">
+		<h1>Please fill the information below</h1>
+		<table align="center">
+			<form align="center" action="addborrower.html" method="POST" >
+				<div>
+					<tr>
+						<td>Full Name</td>
+						<td><input type="text" name="fname" required /></td>
+					</tr>
+					<tr>
+						<td>SSN</td>
+						<td><input type="text" name="ssn" required /></td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td><input type="text" name="address" required /></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td><input type="text" name="phone" required /></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><input type="submit" value="Add" name="addborrower"></td>
+					</tr>
+				</div>
+			</form>
+		</table>
+	</section>
+</body>
+</html>

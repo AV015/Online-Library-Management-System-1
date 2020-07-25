@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkin Books</title>
+</head>
+<body>
+	<nav>
+	  <div>
+	    <div>
+	      <a href="index.html">Library Management System</a>
+	    </div>
+	    <ul>
+	      <li><a href="booksearch.html">Book Search</a></li>
+	      <li><a href="checkinbook.html">Check-In</a></li>
+	      <li><a href="payfine.html">Pay Fine</a></li>
+	      <li><a href="addborrower.html">Add Borrowers</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<section align="center">
+		<h1>Search for Books to Check-In</h1>
+
+		<form action="checkinbook.html" method="post" align="center">
+			<div>	
+				<input type="text" name="checkin">
+				<input type="submit" name="searchbtn">
+			</div>
+		</form>
+
+			<div>
+				<h3>Heres what we found</h3>
+				<table align="center">
+				<tr>
+					<th>Isbn</th>
+					<th>Title</th>
+					<th>Author</th>
+					<th>Card Number</th>
+					<th>Borrower Name</th>
+					<th>Ssn</th>
+					<th>Check In</th>
+				</tr>
+				<tr>
+						<form action="checkinbook.html" method="POST" align="center">
+							<input type="hidden" name="isbnrtbk">
+							<input type="hidden" name="loanid">
+							<input type="submit" name="checkinbtn">
+						</form>
+					</td>
+				</tr>
+				</table>
+			</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay Fine</title>
+</head>
+<body>
+	<nav>
+	  <div>
+	    <div>
+	      <a href="index.html">Library Management System</a>
+	    </div>
+	    <ul>
+	      <li><a href="booksearch.html">Book Search</a></li>
+	      <li><a href="checkinbook.html">Check-In</a></li>
+	      <li><a href="payfine.html">Pay Fine</a></li>
+	      <li><a href="addborrower.html">Add Borrowers</a></li>
+	    </ul>
+	    <form action="payfine.html" method="post" align="center">
+			<input type="submit" value="Refresh Fines" name="refreshfines">
+		</form>
+	  </div>
+	</nav>
+	<section align = "center">
+		<h1>
+			Enter Card Number, Name or Ssn
+		</h1>
+
+		<form action="payfine.html" method="post">
+			<div>
+				<input type="text" name="searchfines"/>
+				<input type="submit" name="searchfinesbtn" value="Search">
+			</div>
+		</form>
+	
+			<div>
+				<h3>Heres what we found</h3>
+				<table align="center">
+				<tr>
+					<th>Card Number</th>
+					<th>Ssn</th>
+					<th>Full Name</th>
+					<th>Fine Amount</th>
+					<th>Pay</th>
+				</tr>
+				<tr>
+						<form action="payfine.html" method="POST" align="center">
+							<input type="hidden" name="cardnumber">
+							<input type="submit" name="paybtn" value="Pay" >
+						</form>
+				</tr>
+	</section>
+</body>
+</html>
