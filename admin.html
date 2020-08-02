@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>Admin</title>
 </head>
 <body>
 	<nav>
 	  <div>
-	    <div>
-	      <a href="index.html">Library Management System</a>
-	    </div>
 	    <ul>
+	      <li><a class="active" href="index.html">Library Management System</a></li>
 	      <li><a href="register.html">Register</a></li>
 	      <li><a href="login.html">Login</a></li>
 	    </ul>
 	  </div>
 	</nav>
 <section align="center">
-		<h1>Please fill the information below</h1>
-		<table align="center">
+		<h1>Please Fill The Information Below</h1><br>
 			<form align="center" action="index.html" method="POST" >
-				<div>
-					<tr>
-						<td>Admin User Name</td>
-						<td><input type="text" name="auname" required /></td>
-					</tr>
-					<tr>
-						<td>Admin Password</td>
-						<td><input type="password" name="apassword" required /></td>
-					</tr>
-					<tr>
-						<td colspan="2" align="center"><input type="submit" value="Login"></td>
-					</tr>
-				</div>
+				 <label for="auname">Admin User Name</label><br>
+  				 <input type="text" id="auname" name="auname"><br>
+				 <label for="apass">Admin Password</label><br>
+  				 <input type="password" id="apass" name="apass"><br><br>
+  				 <input type="submit" value="Login">
 			</form>
-		</table>
 	</section>
 </body>
 </html>

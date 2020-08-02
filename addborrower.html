@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>Add Borrowers</title>
 </head>
 <body>
 	<nav>
 	  <div>
-	    <div>
-	      <a href="index.html">Library Management System</a>
-	    </div>
 	    <ul>
+	      <li><a class="active" href="index.html">Library Management System</a></li>
 	      <li><a href="booksearch.html">Book Search</a></li>
 	      <li><a href="checkinbook.html">Check-In</a></li>
 	      <li><a href="payfine.html">Pay Fine</a></li>
@@ -18,32 +17,16 @@
 	  </div>
 	</nav>
 	<section align="center">
-		<h1>Please fill the information below</h1>
-		<table align="center">
+		<h1>Please Fill The Information Below</h1><br>
 			<form align="center" action="addborrower.html" method="POST" >
-				<div>
-					<tr>
-						<td>Full Name</td>
-						<td><input type="text" name="fname" required /></td>
-					</tr>
-					<tr>
-						<td>SSN</td>
-						<td><input type="text" name="ssn" required /></td>
-					</tr>
-					<tr>
-						<td>Address</td>
-						<td><input type="text" name="address" required /></td>
-					</tr>
-					<tr>
-						<td>Phone</td>
-						<td><input type="text" name="phone" required /></td>
-					</tr>
-					<tr>
-						<td colspan="2" align="center"><input type="submit" value="Add" name="addborrower"></td>
-					</tr>
-				</div>
-			</form>
-		</table>
+				 <label for="fullnm">Full Name</label><br>
+  				 <input type="text" id="fullnm" name="fullno"><br>
+				 <label for="ssn">SSN</label><br>
+  				 <input type="text" id="ssn" name="ssn"><br>
+  				 <label for="pno">Phone No</label><br>
+  				 <input type="text" id="pno" name="pno"><br><br>
+  				 <input type="submit" value="Add">
+			</form>		
 	</section>
 </body>
 </html>

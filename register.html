@@ -1,51 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>Registration</title>
 </head>
 <body>
 	<nav>
 	  <div>
-	    <div>
-	      <a href="index.html">Library Management System</a>
-	    </div>
 	    <ul>
+	      <li><a class="active" href="index.html">Library Management System</a></li>
 	      <li><a href="admin.html">Admin</a></li>
 	      <li><a href="login.html">Login</a></li>
 	    </ul>
 	  </div>
 	</nav>
 <section align="center">
-		<h1>Please fill the information below</h1>
-		<table align="center">
+		<h1>Please Fill The Information Below</h1><br>
 			<form align="center" action="login.html" method="POST" >
+				 <label for="uname">User Name</label><br>
+  				 <input type="text" id="uname" name="uname"><br>
+				 <label for="email">Email ID</label><br>
+  				 <input type="email" id="email" name="email"><br>
+  				 <label for="pno">Phone No</label><br>
+  				 <input type="text" id="pno" name="pno"><br>
+				 <label for="pass">Password</label><br>
+  				 <input type="password" id="pass" name="pass"><br><br>
+  				 <input type="submit" value="Submit">
 				<div>
-					<tr>
-						<td>User Name</td>
-						<td><input type="text" name="uname" required /></td>
-					</tr>
-					<tr>
-						<td>Email Id</td>
-						<td><input type="email" name="email" required /></td>
-					</tr>
-					<tr>
-						<td>Address</td>
-						<td><input type="text" name="address" required /></td>
-					</tr>
-					<tr>
-						<td>Phone</td>
-						<td><input type="text" name="phone" required /></td>
-					</tr>
-					<tr>
-						<td>Password</td>
-						<td><input type="password" name="password" required /></td>
-					</tr>
-					<tr>
-						<td colspan="2" align="center"><input type="submit" value="Submit"></td>
-					</tr>
-				</div>
-				<div>
-   				 <p>Already have an account? <a href="login.html">login</a></p>
+   				 <p>Already Have An Account? <a href="login.html">Login</a></p>
   				</div>
 			</form>
 		</table>
