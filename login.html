@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script type="text/javascript" src="myscript.js"></script>
 	<title>Login</title>
 </head>
 <body>
@@ -16,12 +17,11 @@
 	</nav>
 <section align="center">
 		<h1>Please Fill The Information Below</h1><br>
-			<form align="center" action="booksearch.html" method="POST" >
+			<form name="login" align="center" action="booksearch.html" method="POST" onsubmit="return validateLogin()">
 				<label for="uname">User Name</label><br>
-  				<input type="text" id="uname" name="uname"><br>
+  				<input type="text" id="uname" name="uname" placeholder="user1" required><br>
 				<label for="pass">Password</label><br>
-  				<input type="password" id="pass" name="pass"><br><br>
-  			</form>
+  				<input type="password" id="pass" name="pass" placeholder="user1" required><br><br>
   				<div>
   					<input type="submit" value="Login">
   				</div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="myscript.js"></script>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<title>Registration</title>
 </head>
@@ -16,20 +17,26 @@
 	</nav>
 <section align="center">
 		<h1>Please Fill The Information Below</h1><br>
-			<form align="center" action="login.html" method="POST" >
+			<form name="register"align="center" action="login.html" method="POST" onsubmit ="return Register()">
 				 <label for="uname">User Name</label><br>
-  				 <input type="text" id="uname" name="uname"><br>
+  				 <input type="text" id="uname" name="uname" required><br>
 				 <label for="email">Email ID</label><br>
-  				 <input type="email" id="email" name="email"><br>
+  				 <input type="email" id="email" name="email" required><br>
   				 <label for="pno">Phone No</label><br>
-  				 <input type="text" id="pno" name="pno"><br>
+  				 <input type="text" id="pno" name="pno" required><br>
 				 <label for="pass">Password</label><br>
-  				 <input type="password" id="pass" name="pass"><br><br>
+  				 <input type="password" id="pass" name="pass" required><br><br>
   				 <input type="submit" value="Submit">
 				<div>
    				 <p>Already Have An Account? <a href="login.html">Login</a></p>
   				</div>
 			</form>
+			<div id="print">
+			<p id=p1></p>
+			<p id=p2></p>	
+			<p id=p3></p>	
+			<p id=p4></p>		
+  			</div>
 		</table>
 	</section>
 </body>
