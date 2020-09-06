@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<title>Book Search</title>
 </head>
 <body>
-	<nav>
-	  <div>
-	    <div>
-	    </div>
-	    <ul>
-	      <li><a class="active" href="index.html">Library Management System</a></li>
-	      <li><a href="booksearch.html">Book Search</a></li>
-	      <li><a href="checkinbook.html">Check-In</a></li>
-	      <li><a href="payfine.html">Pay Fine</a></li>
-	      <li><a href="addborrower.html">Add Borrowers</a></li>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active"><a class="nav-link" href="index.html">Library Management System</a></li>
+	      <li class="nav-item"><a class="nav-link" href="booksearch.html">Book Search</a></li>
+	      <li class="nav-item"><a class="nav-link" href="checkinbook.html">Check-In</a></li>
+	      <li class="nav-item"><a class="nav-link" href="payfine.html">Pay Fine</a></li>
+	      <li class="nav-item"><a class="nav-link" href="addborrower.html">Add Borrowers</a></li>
 	    </ul>
-	  </div>
 	</nav>
 	<section align="center">
-		<h1>
-			Search for Books
-		</h1>
+		<h1 class="display-4">Search for Books</h1>
 
 		<form action="booksearch.html"  method="post" align="center">
-			<div>
-				<input type="text" name="search">
-				<input type="submit" name="searchbtn">
+			<div align="center">
+				<input class="form-control" style="width: 20%; display: inline" type="text" name="search">
+				<button type="submit" class="btn btn-outline-dark" >Search</button>
 			</div>
 		</form>
 
-			<div>
+			<div >
 				<h3>Here All Books Are Available</h3>
 				<table align="center">
 					<tr>
@@ -40,11 +38,11 @@
 						<th><h4>Available</h4></th>
 						<th><h4>Check Out</h4></th>
 					</tr>
-					</tr>
+				
 					<tr>
 							<form action="booksearch.html" method="POST" align="center"><br>
 								<input type="hidden" name='cardno'>
-								<input type="submit" name="checkout" value="Checkout">
+								<button type="submit" class="btn btn-outline-dark" >Checkout</button><br>
 							</form>
 							
 					</tr>

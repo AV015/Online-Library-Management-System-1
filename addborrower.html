@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<title>Add Borrowers</title>
 </head>
 <body>
-	<nav>
-	  <div>
-	    <ul>
-	      <li><a class="active" href="index.html">Library Management System</a></li>
-	      <li><a href="booksearch.html">Book Search</a></li>
-	      <li><a href="checkinbook.html">Check-In</a></li>
-	      <li><a href="payfine.html">Pay Fine</a></li>
-	      <li><a href="addborrower.html">Add Borrowers</a></li>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active"><a class="nav-link" href="index.html">Library Management System</a></li>
+	      <li class="nav-item"><a class="nav-link" href="booksearch.html">Book Search</a></li>
+	      <li class="nav-item"><a class="nav-link" href="checkinbook.html">Check-In</a></li>
+	      <li class="nav-item"><a class="nav-link" href="payfine.html">Pay Fine</a></li>
+	      <li class="nav-item"><a class="nav-link" href="addborrower.html">Add Borrowers</a></li>
 	    </ul>
-	  </div>
 	</nav>
 	<section align="center">
-		<h1>Please Fill The Information Below</h1><br>
-			<form align="center" action="addborrower.html" method="POST" >
-				 <label for="fullnm">Full Name</label><br>
-  				 <input type="text" id="fullnm" name="fullno" required><br>
-				 <label for="ssn">SSN</label><br>
-  				 <input type="text" id="ssn" name="ssn" required><br>
-  				 <label for="pno">Phone No</label><br>
-  				 <input type="text" id="pno" name="pno" required><br><br>
-  				 <input type="submit" value="Add">
+		<h1 class="display-4">Please Fill The Information Below</h1><br>
+			<form class="was-validated" align="center" action="addborrower.html" method="POST" >
+				<div align="center">
+					<label for="fullnm">Full Name</label><br>
+  				 	<input type="text" class="form-control" style="width: 20%;" id="fullnm" name="fullno" required><br>
+  				 </div>
+  				 <div align="center">
+				 	<label for="ssn">SSN</label><br>
+  				 	<input type="text" class="form-control" style="width: 20%;" id="ssn" name="ssn" required><br>
+  				 </div>
+  				 <div align="center">
+  				 	<label for="pno">Phone No</label><br>
+  				 	<input type="text" class="form-control" style="width: 20%;" id="pno" name="pno" required><br><br>
+  				 </div>
+  				 <div align="center">
+  				 	<button type="submit" class="btn btn-outline-dark" >Add</button>
+  				 </div>
 			</form>		
 	</section>
 </body>
