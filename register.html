@@ -7,6 +7,72 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$("#uname").focusout(function(){
+  				var unm = $("#uname").val();
+  				
+  				if(unm.length < 3 || unm.length > 20)
+  				{
+  					$(".uname-err").html("**Please Enter Username Between 3 To 20**");
+  					$(".uname-err").css("color","red");
+  					return false;
+  				}
+
+  				else
+  					return true;  				
+  			});
+
+  			$("#pass").focusout(function(){
+  				var pas = $("#pass").val();
+
+  				if(pas.length < 5 )
+  				{
+  					$(".pass-err").html("**Please Enter Password Minimum 5 Characters Long**");
+  					$(".pass-err").css("color","red");
+  					return false;
+  				}
+
+  				else
+  					return true;
+  			});
+
+  			$("#pno").focusout(function(){
+  				var pno_len = $("#pno").val();
+
+  				if(pno_len.length != 10)
+  				{
+  					$(".pno-err").html("**Please Enter 10 Digit Phone No**");
+  					$(".pno-err").css("color","red");
+  					return false;
+  				}
+
+  				else
+  					return true;
+  			});
+
+  			$("#email").focusout(function(){
+  				var email = $("#email").val();
+  				if(email.length == 0)
+  				{
+  					$(".email-err").html("**Please Valid Email Address**");
+  					$(".email-err").css("color","red");
+  					return false;	
+  				}
+  				if(!(email.includes("@",0)) || !(email.includes(".",0)))
+  				{
+  					$(".email-err").html("**Please Valid Email Address**");
+  					$(".email-err").css("color","red");
+  					return false;
+  				}
+
+  				else
+  					return true;
+  			});
+  		});
+  	</script>
+
 	<title>Registration</title>
 </head>
 <body>
@@ -22,22 +88,22 @@
 	</nav>
 <section align="center">
 		<h1 class="display-4">Please Fill The Information Below</h1><br>
-			<form class="was-validated" name="register"align="center" action="login.html">
+			<form class="" name="register"align="center" action="login.html">
 				<div align="center">
 				 	<label for="uname">User Name</label><br>
-  				 	<input type="text" class="form-control" style="width: 20%;" id="uname" name="uname" required><br>
+  				 	<input type="text" class="form-control" style="width: 20%;" id="uname" name="uname" required><div class="uname-err"></div><br>
   				 </div>
   				 <div align="center">
 				 	<label for="email">Email ID</label><br>
-  				 	<input type="email" class="form-control" style="width: 20%;" id="email" name="email" required><br>
+  				 	<input type="email" class="form-control" style="width: 20%;" id="email" name="email" required><div class="email-err"></div><br>
   				 </div>
   				 <div align="center">
   				 	<label for="pno">Phone No</label><br>
-  				 	<input type="text" class="form-control" style="width: 20%;" id="pno" name="pno" required><br>
+  				 	<input type="number" class="form-control" style="width: 20%;" id="pno" name="pno" required><div class="pno-err"></div><br>
   				 </div>
   				 <div align="center">
 				 	<label for="pass">Password</label><br>
-  				 	<input type="password" class="form-control" style="width: 20%;" id="pass" name="pass" required><br><br>
+  				 	<input type="password" class="form-control" style="width: 20%;" id="pass" name="pass" required><div class="pass-err"></div><br><br>
   				 </div>
   				 <div align="center">
   				 	<button type="submit" class="btn btn-outline-dark" >Register</button>
